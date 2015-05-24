@@ -284,3 +284,10 @@ C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debu
 C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
 C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
 C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\alan_000\Documents\GitHub\EmaxManager\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb

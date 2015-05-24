@@ -192,7 +192,7 @@ Partial Class management
         Me.btnLoadOther.AllowDrop = True
         Me.btnLoadOther.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLoadOther.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnLoadOther.Location = New System.Drawing.Point(426, 85)
+        Me.btnLoadOther.Location = New System.Drawing.Point(415, 85)
         Me.btnLoadOther.Name = "btnLoadOther"
         Me.btnLoadOther.Size = New System.Drawing.Size(138, 39)
         Me.btnLoadOther.TabIndex = 26

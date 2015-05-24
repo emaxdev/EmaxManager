@@ -121,48 +121,72 @@
     <Compile Include="forms\backingUp.Designer.vb">
       <DependentUpon>backingUp.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\backingUp.vb" />
+    <Compile Include="forms\backingUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\connections.Designer.vb">
       <DependentUpon>connections.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\connections.vb" />
+    <Compile Include="forms\connections.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\Integrity.Designer.vb">
       <DependentUpon>Integrity.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\Integrity.vb" />
+    <Compile Include="forms\Integrity.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\licences.Designer.vb">
       <DependentUpon>licences.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\licences.vb" />
+    <Compile Include="forms\licences.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\log.Designer.vb">
       <DependentUpon>log.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\log.vb" />
+    <Compile Include="forms\log.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\management.Designer.vb">
       <DependentUpon>management.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\management.vb" />
+    <Compile Include="forms\management.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\mysettings.Designer.vb">
       <DependentUpon>mysettings.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\mysettings.vb" />
+    <Compile Include="forms\mysettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\queries.Designer.vb">
       <DependentUpon>queries.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\queries.vb" />
+    <Compile Include="forms\queries.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\restore.Designer.vb">
       <DependentUpon>restore.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\restore.vb" />
+    <Compile Include="forms\restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\scheduler.Designer.vb">
       <DependentUpon>scheduler.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\scheduler.vb" />
+    <Compile Include="forms\scheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\serverConnect.Designer.vb">
       <DependentUpon>serverConnect.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\serverConnect.vb" />
-    <Compile Include="forms\main.vb" />
+    <Compile Include="forms\serverConnect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\main.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="forms\main.Designer.vb">
       <DependentUpon>main.vb</DependentUpon>
       <SubType>Form</SubType>
