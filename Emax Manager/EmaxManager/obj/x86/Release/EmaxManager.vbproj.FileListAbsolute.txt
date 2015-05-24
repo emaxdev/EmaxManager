@@ -1,0 +1,246 @@
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\Resources\foobar.ico
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\App.config
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.manifest
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.application
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.pdb
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\EmaxManager.xml
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.application
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\Resources\foobar.ico
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\App.config
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.application
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.xml
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.application
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\Resources\foobar.ico
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\App.config
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.application
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.xml
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\shares\Public\Docs\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.application
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\Resources\foobar.ico
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\App.config
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.application
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.pdb
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.xml
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+C:\Users\Al\Desktop\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.application
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+\\192.168.0.4\Public\Al\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+Z:\Alan\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+Z:\Alan\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\alan_000\Desktop\From Old Disk\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+F:\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+F:\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+F:\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+F:\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+F:\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+F:\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+F:\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\Resources\foobar.ico
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\App.config
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Release\Interop._Virtual.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\Interop._Virtual.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\Resources\foobar.ico
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\App.config
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\Resources\EmaxIcon.ico
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.backingUp.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.backUp.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.connections.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.Integrity.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.licences.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.log.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.mainPassword.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.management.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.mysettings.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.queries.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.restore.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.scheduler.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.serverConnect.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.main.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.Loading.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.Resources.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Release\EmaxManager.application

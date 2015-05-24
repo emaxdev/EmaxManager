@@ -1,0 +1,286 @@
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\EmaxManager.exe.config
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\638\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\640\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\641\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\650\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\671\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\672\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\678\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\681\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\682\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\684\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\685\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\686\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\691\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\692\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\694\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\706\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\management\upgrades\709\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\Resources\foobar.ico
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\App.config
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\Resources\EmaxIcon.ico
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\EmaxManager.exe
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\EmaxManager.pdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\EmaxManager.xml
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\MdiClientController.dll
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\bin\Debug\MdiClientController.xml
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.backingUp.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.backUp.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.connections.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.info.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.log.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.management.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.mysettings.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.queries.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.restore.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.serverConnect.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.main.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.Loading.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.Resources.resources
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.exe
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.xml
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\SQLRunner\obj\x86\Debug\EmaxManager.pdb
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\obj\x86\Debug\EmaxManager.exe
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\Al\SkyDrive\Projects\SQLRunner2 - Copy\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\638\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\640\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\641\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\650\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\671\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\672\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\678\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\681\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\682\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\684\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\685\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\686\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\691\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\692\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\694\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\706\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\management\upgrades\709\Patches\After\Buttons.mdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\foobar.ico
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\App.config
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.pdb
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.xml
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\MdiClientController.dll
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\MdiClientController.xml
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backUp.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.info.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Loading.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+C:\Users\Al\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\foobar.ico
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\App.config
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.pdb
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.xml
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\MdiClientController.xml
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backUp.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.info.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Loading.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe.manifest
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.manifest
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.application
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.application
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.licences.resources
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+E:\Sky Drive\SkyDrive\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.scheduler.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\Resources\foobar.ico
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\App.config
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.backUp.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.Integrity.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.licences.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.mainPassword.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.scheduler.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.Loading.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager - Copy\EmaxManager\obj\x86\Debug\EmaxManager.exe
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\foobar.ico
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\App.config
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.manifest
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.application
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.pdb
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.xml
+Z:\Alan\Projects\Emax Manager\EmaxManager\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backUp.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Integrity.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.licences.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mainPassword.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.scheduler.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Loading.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe.manifest
+Z:\Alan\Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\Resources\foobar.ico
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\App.config
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.pdb
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backUp.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Integrity.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.licences.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mainPassword.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.scheduler.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Loading.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe.manifest
+C:\Users\alan_000\Desktop\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.application
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\Resources\foobar.ico
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\App.config
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\Resources\EmaxIcon.ico
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.manifest
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.application
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.pdb
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\EmaxManager.xml
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbprojResolveAssemblyReference.cache
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.backingUp.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.connections.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Integrity.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.licences.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.log.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.management.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.mysettings.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.queries.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.restore.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.scheduler.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.serverConnect.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.main.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.Resources.resources
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.GenerateResource.Cache
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.exe.manifest
+Z:\Alan\Current Projects\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.application
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\bin\Debug\EmaxManager.exe.config
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\Interop.MSDASC.dll
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\Interop.TaskScheduler.dll
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\Interop._Virtual.dll
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.vbproj.ResolveComReference.cache
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.xml
+C:\Users\alan_000\Desktop\Emax Manager (2)\Emax Manager\EmaxManager\obj\x86\Debug\EmaxManager.pdb

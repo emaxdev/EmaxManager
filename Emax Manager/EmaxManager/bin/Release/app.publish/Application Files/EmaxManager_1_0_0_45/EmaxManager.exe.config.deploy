@@ -1,0 +1,128 @@
+﻿<?xml version="1.0"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="EmaxManager.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup>
+        
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0,Profile=Client"/></startup>
+    <userSettings>
+        <EmaxManager.My.MySettings>
+            <setting name="username" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="password" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="server" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="database" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="remember" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="mainPass" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rstrDBName" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rstrDBFile" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rstrDBLocation" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dfltRestoreDir" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dfltRestoreFileLoc" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dfltBackUpLocation" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Setting" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="checkedDatabases" serializeAs="Xml">
+                <value>
+                    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <string>Test</string>
+                    </ArrayOfString>
+                </value>
+            </setting>
+            <setting name="log" serializeAs="Xml">
+                <value>
+                    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <string>Test</string>
+                    </ArrayOfString>
+                </value>
+            </setting>
+            <setting name="upgradeLocation" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="mainDatabase" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="mainDatabaseLocked" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="autoBackUp" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="updateFolder" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="databaseList" serializeAs="Xml">
+                <value>
+                    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <string>Test</string>
+                    </ArrayOfString>
+                </value>
+            </setting>
+            <setting name="loaded" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="dontRunViews" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="hideDisclaimer" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="autoConnect" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="settingsFolder" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autoCheckForUpdate" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="licenceFolder" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="mainPassword" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="serverList" serializeAs="Xml">
+                <value>
+                    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                        <string>None</string>
+                    </ArrayOfString>
+                </value>
+            </setting>
+            <setting name="companyName" serializeAs="String">
+                <value />
+            </setting>
+        </EmaxManager.My.MySettings>
+    </userSettings>
+</configuration>

@@ -1,0 +1,5 @@
+PlayReset.txt
+Clear Stock LessThan 0.1.txt
+Clear Stock LessThan 0.01.txt
+Clear Stock LessThan 0.001.txt
+Move Buttons.txt
