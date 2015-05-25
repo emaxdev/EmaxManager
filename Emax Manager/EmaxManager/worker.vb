@@ -361,7 +361,7 @@ Public Class worker
             conn.Open()
             Dim dTypeIdentity As Integer = -1
             Dim updateVersion = Int(version)
-            Dim profileSqlText = "UPDATE    System SET Version = " & (latestVersion / 100)
+            Dim profileSqlText = "UPDATE    System SET Version = " & (version / 100)
             Dim sqlCmd5 = New SqlCommand(profileSqlText, conn)
 
             myVersion = CType(sqlCmd5.ExecuteScalar(), Double)
@@ -441,19 +441,30 @@ Public Class worker
         Return myVersion
     End Function
 
+   
+
+
     Public Shared Function newupgrade(ByVal database As String)
         Dim success As Boolean = False
         Dim currentVersion As Double
         Dim connstr As String
         Dim runCount As Integer = 0
-        Dim upgradeFile As String
+        Dim upgradeFile As String = ""
 
         'Clear variables
         'log.Clear()
         connstr = ""
         'Location of main upgrade folder is set in system settings
-        upgradeFile = My.Settings.settingsFolder & "Upgrade.txt"
 
+        If My.Settings.upgradeFileLocation > "" Then
+            If IO.File.Exists(My.Settings.upgradeFileLocation) Then
+                upgradeFile = My.Settings.upgradeFileLocation
+            End If
+        Else
+            If IO.File.Exists(My.Settings.settingsFolder & "Upgrade.txt") Then
+                upgradeFile = My.Settings.settingsFolder & "Upgrade.txt"
+            End If
+        End If
         'Get current version of database
         currentVersion = (worker.getVersion(database) * 100)
 
@@ -477,20 +488,16 @@ Public Class worker
                     scriptDetails = File.ReadAllText(upgradeFile)
                     Dim stringToFind As String = ""
                     Dim position As Integer
-                    Dim scriptsStart As Integer = InStr(scriptDetails, "--Version " & currentVersion + 1)
-                    Dim scriptsEnd As Integer = InStr(scriptDetails, "--Scripts End")
-                    Dim buttonsStart As Integer = InStr(scriptDetails, "--Buttons Start")
-                    Dim buttonsEnd As Integer = InStr(scriptDetails, "--Buttons End")
-                    Dim integrityStart As Integer = InStr(scriptDetails, "--Integrity Start")
-                    Dim integrityEnd As Integer = InStr(scriptDetails, "--Integrity End")
 
-                    If buttonsStart > 0 Then buttonDetails = scriptDetails.Substring(buttonsStart - 2, buttonsEnd - buttonsStart - 2)
-                    If integrityStart > 0 Then integrityDetails = scriptDetails.Substring(integrityStart - 2, integrityEnd - integrityStart - 2)
-                    scriptDetails = scriptDetails.Substring(scriptsStart - 2, scriptsEnd - scriptsStart)
+                    buttonDetails = getTextBetweenComments(scriptDetails, "--Buttons Start", "--Buttons End")
+                    integrityDetails = getTextBetweenComments(scriptDetails, "--Integrity Start", "--Integrity End")
+                    scriptDetails = getTextBetweenComments(scriptDetails, "--Version " & currentVersion + 1, "--Scripts End")
 
-
-
-
+                    If Not scriptDetails > "" Then
+                        MsgBox("Problem  with upgrade file.")
+                        success = False
+                        GoTo UpdateError
+                    End If
 
                     scriptDetails = Replace(scriptDetails, "--", ";")
                     versionArr = scriptDetails.Split(";")
@@ -520,6 +527,11 @@ Public Class worker
                     Array.Clear(versionArr, versionArr.GetLowerBound(0), versionArr.Length)
                 End Try
                 Try
+                    Try
+                        worker.setVersion(99999)
+                    Catch ex As Exception
+
+                    End Try
 
                     For Each script In myScriptList
                         'settext(script.scriptName)
@@ -594,7 +606,17 @@ skipscript:
                     myScriptList.Clear()
                 End Try
             End If
-            
+
+            Dim integrityResult As String = ""
+            integrityResult = checkIntegrity(database)
+            If Not integrityResult.Contains("Critical") Then
+                log.Add(database & " - integrity successfull")
+            Else
+                log.Add(database & " - intrgrity failed")
+                main.integrityResult = integrityResult
+                GoTo updateError
+            End If
+
             If buttonDetails > "" Then
                 If fixButtons(buttonDetails) Then
                     log.Add(database & " - updating buttons successfull")
@@ -658,6 +680,18 @@ UpdateError:
         Return success
     End Function
 
+    Public Shared Function getTextBetweenComments(searchText As String, startText As String, endText As String) As String
+        Dim startPos As Integer
+        Dim endPos As Integer
+        startPos = InStr(searchText, startText)
+        endPos = InStr(searchText, endText)
+        If startPos > 0 And endPos > 0 Then
+            getTextBetweenComments = searchText.Substring(startPos - 2, endPos - startPos - 2)
+        Else
+            getTextBetweenComments = ""
+        End If
+    End Function
+
     Public Shared Function fixButtons(buttonDetails As String) As Boolean
         Try
             Dim connstr As String = "Server=" & server & ";Database=" & database.ToString & ";UID=" & username & ";PWD=" & password & ""
@@ -696,7 +730,7 @@ UpdateError:
             fixButtons = False
             MsgBox(ex.Message)
         End Try
-      
+
         fixButtons = True
 
     End Function
@@ -757,7 +791,7 @@ UpdateError:
 
                 File.Copy(My.Settings.settingsFolder & "Get_New_Version_New.exe", My.Settings.updateFolder & "update folder\Get_New_Version_New.exe", True)
                 File.Copy(My.Settings.settingsFolder & "NewFilelist.txt", My.Settings.updateFolder & "update folder\NewFilelist.mdb", True)
-               
+
                 Try
                     For Each item In My.Settings.databaseList
                         database = item
@@ -770,7 +804,7 @@ UpdateError:
                         conn.Close()
                         conn.Dispose()
                     Next
-                    
+
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -783,7 +817,7 @@ UpdateError:
         Catch ex As Exception
             MsgBox("File copy error!")
         End Try
-        
+
         Return success
     End Function
 
@@ -819,7 +853,7 @@ UpdateError:
             fstream.Dispose()
 
         Catch ex As Exception
-           
+
         End Try
 
     End Sub
@@ -839,24 +873,33 @@ UpdateError:
     End Sub
 
     Public Shared Function checkIntegrity(ByVal database As String) As String
-        Dim version As Double
-        Dim filename As String
+        Dim integrityInfo As String
+        If My.Settings.upgradeFileLocation > "" Then
+            integrityInfo = File.ReadAllText(My.Settings.upgradeFileLocation)
+        Else
+            integrityInfo = File.ReadAllText(My.Settings.settingsFolder & "Upgrade.txt")
+        End If
+
+        integrityInfo = worker.getTextBetweenComments(integrityInfo, "--Integrity Start", "--Integrity End")
+        If Not integrityInfo > "" Then checkIntegrity = "No integrity info available" : Exit Function
+        integrityInfo = Replace(integrityInfo, "--Integrity Start", "")
+        
+
+        'Dim filename As String
         Dim lineArray As String()
-        integrity = "Integrity Check Results for " & database & vbCr & vbCr
-        version = getVersion(database)
-        filename = My.Settings.settingsFolder & "Emax-Integrity" & version & ".csv"
+        checkIntegrity = "Integrity Check Results for " & database & vbCr & vbCr
         Dim sConnectionString As String
         sConnectionString = "Password= " & password & ";User ID=" & username & ";" & _
                             "Initial Catalog= " & database & ";" & _
                             "Data Source=" & server & ""
 
-        Try
-            Dim web_client2 As WebClient = New WebClient
-            web_client2.DownloadFile("http://software.emax-systems.co.uk/downloads/Manager/Emax-Integrity" & version & ".csv", filename)
-        Catch ex As Exception
-            checkIntegrity = "Integrity check currently unavailable!"
-            Exit Function
-        End Try
+        'Try
+        '    Dim web_client2 As WebClient = New WebClient
+        '    web_client2.DownloadFile("http://software.emax-systems.co.uk/downloads/Manager/Emax-Integrity" & version & ".csv", filename)
+        'Catch ex As Exception
+        '    checkIntegrity = "Integrity check currently unavailable!"
+        '    Exit Function
+        'End Try
 
 
         Dim objConn As New SqlConnection(sConnectionString)
@@ -868,40 +911,82 @@ UpdateError:
         Dim datatable As DataTable
         da.Fill(dataset)
         datatable = dataset.Tables(0)
-        Dim sr As New StreamReader(filename)
+        Dim sr As New StringReader(integrityInfo)
         Dim lineCount As Integer = 0
 
-        Dim FILE_NAME As String = My.Settings.settingsFolder & "patches\" & "Integrity.csv"
+        'Dim FILE_NAME As String = My.Settings.settingsFolder & "patches\" & "Integrity.csv"
 
-
-
-        Dim objWriter As New System.IO.StreamWriter(FILE_NAME, False)
+        Dim mainDBTables As New Dictionary(Of String, String)
+        Dim thisDBTables As New Dictionary(Of String, String)
+        Dim mainDBTableFields As New Dictionary(Of String, String)
+        Dim thisDBTableFields As New Dictionary(Of String, String)
 
         For Each dr In datatable.Rows
-            If Not sr.EndOfStream Then
-                lineArray = sr.ReadLine().Split(","c)
-                lineCount += 1
-                objWriter.WriteLine(lineArray(0).Trim() & "," & lineArray(1).Trim() & "," & dr(0) & "," & dr(1))
-                If Not lineArray(1).Trim().Equals(dr(1)) Then
-                    If Not InStr(integrity, "Problem with table") > 0 Then integrity += "Problem with table " & " - " & lineArray(0).Trim() & vbCrLf
-                End If
+            If Not thisDBTables.ContainsValue(dr(0).ToString) Then thisDBTables.Add(dr(0).ToString, dr(0).ToString)
+        Next
+
+        Do While sr.Peek > 0
+            lineArray = sr.ReadLine().Split(","c)
+            If lineArray(0).Trim() > "" Then If Not mainDBTables.ContainsValue(lineArray(0).Trim()) Then mainDBTables.Add(lineArray(0).Trim(), lineArray(0).Trim())
+        Loop
+
+        For Each pair In mainDBTables
+            If Not thisDBTables.ContainsKey(pair.Key) Then
+                checkIntegrity += "Critical - Table exists in main but is missing from local - " & pair.Key & vbCrLf
+            Else
+                mainDBTableFields.Clear()
+                thisDBTableFields.Clear()
+                For Each dr In datatable.Rows
+                    If dr(0).Equals(pair.Key) Then thisDBTableFields.Add(dr(1), dr(1))
+                Next
+                Dim sr2 As New StringReader(integrityInfo)
+                Do While sr2.Peek > 0
+                    lineArray = sr2.ReadLine().Split(","c)
+                    If lineArray(0).Equals(pair.Key) Then mainDBTableFields.Add(lineArray(1), lineArray(1))
+                Loop
+
+                For Each pair2 In mainDBTableFields
+                    Dim found As Boolean = False
+                    For Each pair3 In thisDBTableFields
+                        If pair2.Value = pair3.Value Then found = True : Exit For
+                    Next
+                    If Not found Then
+                        checkIntegrity += "Critical - Field exists in main but is missing from local - " & pair.Value & " - " & pair2.Value & vbCrLf
+                    End If
+
+                Next
+
+                For Each pair4 In thisDBTableFields
+                    Dim found As Boolean = False
+                    For Each pair5 In mainDBTableFields
+                        If pair4.Value = pair5.Value Then found = True : Exit For
+                    Next
+                    If Not found Then
+                        checkIntegrity += "Critical - Field exists in local but is missing from main - " & pair.Value & " - " & pair4.Value & vbCrLf
+                    End If
+
+                Next
+
             End If
         Next
 
-        objWriter.Close()
+        For Each pair In thisDBTables
+            If Not mainDBTables.ContainsKey(pair.Key) Then checkIntegrity += "Table exists in this DB but is missing from this main DB - " & pair.Key & vbCrLf
+        Next
+
+        
 
 
-        If InStr(integrity, "Problem") > 0 Then
-            integrity += "Check integrity file."
-        Else
-            integrity += "Table Integrity OK."
+
+        If Not InStr(checkIntegrity, "Critical") > 0 Then
+            checkIntegrity += vbCrLf & "Table Integrity OK."
         End If
-        integrity += vbCrLf & vbCrLf
-        integrity += "Crashed PO Lines: " & getCount(database, "SELECT  COUNT(dbo.Po_Lines.Po_Lines_ID) AS Count FROM dbo.Po_Lines INNER JOIN dbo.Purchase_Order ON dbo.Po_Lines.Po__PO_ID = dbo.Purchase_Order.Purchase_Order_ID GROUP BY dbo.Purchase_Order.Po_No HAVING        (dbo.Purchase_Order.Po_No IS NULL)")
+        'checkIntegrity += vbCrLf
+        'checkIntegrity += "Crashed PO Lines: " & getCount(database, "SELECT  COUNT(dbo.Po_Lines.Po_Lines_ID) AS Count FROM dbo.Po_Lines INNER JOIN dbo.Purchase_Order ON dbo.Po_Lines.Po__PO_ID = dbo.Purchase_Order.Purchase_Order_ID GROUP BY dbo.Purchase_Order.Po_No HAVING        (dbo.Purchase_Order.Po_No IS NULL)")
 
 
 exitNow:
-        checkIntegrity = integrity
+
     End Function
 
     Public Shared Function darkLight(r, b, g) As Color
@@ -918,7 +1003,6 @@ exitNow:
         Dim conn = New SqlConnection(connStr)
         Try
 
-
             conn.Open()
             Dim dTypeIdentity As Integer = -1
             Dim profileSqlText = query
@@ -932,14 +1016,4 @@ exitNow:
         Return count
     End Function
 
-    'Commented Out 10/10/2013
-    'Public Shared Sub settext(ByVal txt As String)
-    '    If main.lblStatus.InvokeRequired Then
-    '        Dim d As New SetTextCallback(AddressOf settext)
-    '        main.Invoke(d, New Object() {txt})
-    '    Else
-    '        main.lblStatus.Text = txt
-    '        Application.DoEvents()
-    '    End If
-    'End Sub
 End Class

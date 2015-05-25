@@ -39,11 +39,31 @@ EmaxManager
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.cloud_comment">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.cloud_download">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:EmaxManager.My.Resources.Resources.delete">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:EmaxManager.My.Resources.Resources.delete1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.dots">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.dots1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.download">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -56,6 +76,10 @@ EmaxManager
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:EmaxManager.My.Resources.Resources.ghost">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EmaxManager.My.Resources.Resources.img_thing">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -24,7 +24,6 @@ Partial Class mysettings
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-      
         Me.cbBackUp = New System.Windows.Forms.CheckBox()
         Me.cbViews = New System.Windows.Forms.CheckBox()
         Me.chkShowDisclaimer = New System.Windows.Forms.CheckBox()
@@ -64,6 +63,7 @@ Partial Class mysettings
         Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.openBackupFolder = New System.Windows.Forms.CheckBox()
+        Me.cbBackupDelete = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,15 +97,11 @@ Partial Class mysettings
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = False
         '
-
-        '
-     
-        '
         'cbBackUp
         '
         Me.cbBackUp.AutoSize = True
         Me.cbBackUp.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.cbBackUp.Location = New System.Drawing.Point(416, 348)
+        Me.cbBackUp.Location = New System.Drawing.Point(415, 341)
         Me.cbBackUp.Name = "cbBackUp"
         Me.cbBackUp.Size = New System.Drawing.Size(152, 17)
         Me.cbBackUp.TabIndex = 9
@@ -116,7 +112,7 @@ Partial Class mysettings
         '
         Me.cbViews.AutoSize = True
         Me.cbViews.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.cbViews.Location = New System.Drawing.Point(412, 330)
+        Me.cbViews.Location = New System.Drawing.Point(411, 324)
         Me.cbViews.Name = "cbViews"
         Me.cbViews.Size = New System.Drawing.Size(156, 17)
         Me.cbViews.TabIndex = 8
@@ -127,7 +123,7 @@ Partial Class mysettings
         '
         Me.chkShowDisclaimer.AutoSize = True
         Me.chkShowDisclaimer.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkShowDisclaimer.Location = New System.Drawing.Point(464, 366)
+        Me.chkShowDisclaimer.Location = New System.Drawing.Point(463, 375)
         Me.chkShowDisclaimer.Name = "chkShowDisclaimer"
         Me.chkShowDisclaimer.Size = New System.Drawing.Size(104, 17)
         Me.chkShowDisclaimer.TabIndex = 10
@@ -138,7 +134,7 @@ Partial Class mysettings
         '
         Me.chkAutoCheckForUpdate.AutoSize = True
         Me.chkAutoCheckForUpdate.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkAutoCheckForUpdate.Location = New System.Drawing.Point(391, 383)
+        Me.chkAutoCheckForUpdate.Location = New System.Drawing.Point(390, 392)
         Me.chkAutoCheckForUpdate.Name = "chkAutoCheckForUpdate"
         Me.chkAutoCheckForUpdate.Size = New System.Drawing.Size(177, 17)
         Me.chkAutoCheckForUpdate.TabIndex = 11
@@ -482,12 +478,23 @@ Partial Class mysettings
         '
         Me.openBackupFolder.AutoSize = True
         Me.openBackupFolder.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.openBackupFolder.Location = New System.Drawing.Point(419, 402)
+        Me.openBackupFolder.Location = New System.Drawing.Point(418, 409)
         Me.openBackupFolder.Name = "openBackupFolder"
         Me.openBackupFolder.Size = New System.Drawing.Size(149, 17)
         Me.openBackupFolder.TabIndex = 65
         Me.openBackupFolder.Text = "Auto Open Backup Folder"
         Me.openBackupFolder.UseVisualStyleBackColor = True
+        '
+        'cbBackupDelete
+        '
+        Me.cbBackupDelete.AutoSize = True
+        Me.cbBackupDelete.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.cbBackupDelete.Location = New System.Drawing.Point(428, 358)
+        Me.cbBackupDelete.Name = "cbBackupDelete"
+        Me.cbBackupDelete.Size = New System.Drawing.Size(139, 17)
+        Me.cbBackupDelete.TabIndex = 66
+        Me.cbBackupDelete.Text = "Auto Backup On Delete"
+        Me.cbBackupDelete.UseVisualStyleBackColor = True
         '
         'mysettings
         '
@@ -496,6 +503,7 @@ Partial Class mysettings
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(588, 462)
         Me.ControlBox = False
+        Me.Controls.Add(Me.cbBackupDelete)
         Me.Controls.Add(Me.openBackupFolder)
         Me.Controls.Add(Me.Panel11)
         Me.Controls.Add(Me.Panel10)
@@ -587,4 +595,5 @@ Partial Class mysettings
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents openBackupFolder As System.Windows.Forms.CheckBox
+    Friend WithEvents cbBackupDelete As System.Windows.Forms.CheckBox
 End Class

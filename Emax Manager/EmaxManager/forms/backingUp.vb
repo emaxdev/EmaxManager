@@ -92,9 +92,6 @@ Public Class backingUp
                         _worker.ReportProgress(1)
                         If worker.backUp(item, location, Action = 13) Then
                             status = "---- " & item & " backed up successfully! ----"
-                            If Action = 2 And My.Settings.openBackupFolder Then
-                                Process.Start("explorer.exe", My.Settings.dfltBackUpLocation)
-                            End If
                         Else
                             status = "---- " & item & " back up failed! ----"
                         End If
@@ -110,15 +107,23 @@ Public Class backingUp
                 End If
                 If Action = 1 Then
                     Dim backupSuccess As Boolean
-                    Dim upgradeFile As String
+                    Dim upgradeFile As String = ""
                     Dim currentVersion As Double
                     Dim latestVersion As Double
                     If worker.getSage(item).Equals("MMS200") Then
                         MsgBox("It looks like this database is connected to Sage MMS 200 - Please check version before installing Exe and DLL")
                     End If
-                    If IO.File.Exists(My.Settings.settingsFolder & "Upgrade.txt") Then
-                        upgradeFile = My.Settings.settingsFolder & "Upgrade.txt"
+                    If My.Settings.upgradeFileLocation > "" Then
+                        If IO.File.Exists(My.Settings.upgradeFileLocation) Then
+                            upgradeFile = My.Settings.upgradeFileLocation
+                        End If
+                    Else
+                        If IO.File.Exists(My.Settings.settingsFolder & "Upgrade.txt") Then
+                            upgradeFile = My.Settings.settingsFolder & "Upgrade.txt"
+                        End If
+                    End If
 
+                    If upgradeFile > "" Then
                         'Get current version of database
                         currentVersion = (worker.getVersion(item) * 100)
 
@@ -126,6 +131,10 @@ Public Class backingUp
                         Dim versionLine As String = objReader.ReadLine() & vbNewLine
 
                         latestVersion = versionLine.Substring(11, 3)
+                    Else
+                        status = "---- " & item & " upgrade failed! ----"
+                        listOfFails = listOfFails & item & vbCrLf
+                        Exit For
                     End If
                     If (currentVersion < latestVersion) Then
                         If My.Settings.autoBackUp Then
@@ -185,6 +194,11 @@ Public Class backingUp
                     _worker.ReportProgress(3)
                 End If
             Next
+            If My.Settings.openBackupFolder And Action = 2 Then
+                If Directory.Exists(My.Settings.dfltBackUpLocation) Then
+                    Process.Start("explorer.exe", My.Settings.dfltBackUpLocation)
+                End If
+            End If
             If Action = 3 Then
                 If restoreFile > "" And restoreLoc > "" And restoreName > "" Then
                     status = restoreName & " restoring!"
@@ -276,7 +290,13 @@ Public Class backingUp
             End If
 
             If Action = 11 Then
-                worker.delete(thisItem)
+                If My.Settings.autoBackUpOnDelete Then
+                    If worker.backUp(thisItem, My.Settings.dfltBackUpLocation) Then
+                        worker.delete(thisItem)
+                    End If
+                Else
+                    worker.delete(thisItem)
+                End If
             End If
 
             If Action = 12 Then
@@ -351,7 +371,32 @@ Public Class backingUp
             End If
 
             If Action = 20 Then
-                integrity = worker.checkIntegrity(thisItem)
+                Dim upgradefile As String = ""
+                Dim currentVersion As Double
+                Dim latestVersion As Double
+                If My.Settings.upgradeFileLocation > "" Then
+                    If IO.File.Exists(My.Settings.upgradeFileLocation) Then
+                        upgradefile = My.Settings.upgradeFileLocation
+                    End If
+                Else
+                    If IO.File.Exists(My.Settings.settingsFolder & "Upgrade.txt") Then
+                        upgradefile = My.Settings.settingsFolder & "Upgrade.txt"
+                    End If
+                End If
+
+                If upgradefile > "" Then
+                    currentVersion = (worker.getVersion(thisItem) * 100)
+
+                    Dim objReader As New System.IO.StreamReader(upgradefile)
+                    Dim versionLine As String = objReader.ReadLine() & vbNewLine
+
+                    latestVersion = versionLine.Substring(11, 3)
+                    If currentVersion = latestVersion Then
+                        integrity = worker.checkIntegrity(thisItem)
+                    Else
+                        integrity = "Database not up-to-date.  Integrity not available!"
+                    End If
+                End If
             End If
 
             If Action = 22 Then
@@ -427,10 +472,20 @@ done:
             integ.Show()
         End If
         If Not (Action = 10 Or Action = 20) Then
-            Dim manage As New management
-            manage.MdiParent = main
-            manage.Show()
+            If Action = 1 And main.integrityResult > "" Then
+                Me.Close()
+                Dim integ As New Integrity
+                integ.MdiParent = main
+                integ.RichTextBox1.Text = main.integrityResult
+                integ.Show()
+            Else
+                Dim manage As New management
+                manage.MdiParent = main
+                manage.Show()
+            End If
+
         End If
+        
         My.Settings.loaded = True
         My.Settings.Save()
 
@@ -482,36 +537,9 @@ done:
             ' Download the file.
             web_client.DownloadFile("http://software.emax-systems.co.uk/downloads/Manager/Upgrade.txt", My.Settings.settingsFolder & "Upgrade.txt")
             web_client.DownloadFile("http://software.emax-systems.co.uk/downloads/Manager/Buttons.txt", My.Settings.settingsFolder & "patches\after\Buttons.mdb")
-            'Dim oldFile As String
-            'Dim newFile As String
-            'Dim oldVersion As String
-            'Dim newVersion As String
-            'newFile = My.Settings.settingsFolder & "update folder\management\temp\Upgrade.txt"
-            'oldFile = My.Settings.settingsFolder & "update folder\management\Upgrade.txt"
-
-            'If IO.File.Exists(oldFile) Then
-            '    If IO.File.Exists(newFile) Then
-            '        Dim objReader As New System.IO.StreamReader(oldFile)
-            '        Dim versionLine As String = objReader.ReadLine() & vbNewLine
-            '        oldVersion = versionLine.Substring(11, 3)
-            '        Dim objReader2 As New System.IO.StreamReader(newFile)
-            '        Dim versionLine2 As String = objReader2.ReadLine() & vbNewLine
-            '        newVersion = versionLine2.Substring(11, 3)
-            '        objReader.Close()
-            '        objReader.Dispose()
-            '        objReader2.Close()
-            '        objReader2.Dispose()
-            '        IO.File.Copy(newFile, oldFile, True)
-            '        If oldVersion < newVersion Then
-            '            MsgBox("A new upgrade has been downloaded!", MsgBoxStyle.Information, "Emax Manager")
-            '        End If
-            '    Else
-            '        MsgBox("Problem checking upgrade!")
-            '    End If
-            'Else
-            '    MsgBox("Problem checking upgrade!")
-            'End If
-        Catch ex As Exception
+            My.Settings.upgradeFileLocation = ""
+            My.Settings.Save()
+                    Catch ex As Exception
             MsgBox("Problem checking upgrade!")
         End Try
     End Sub

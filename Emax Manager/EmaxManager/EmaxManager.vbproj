@@ -172,10 +172,10 @@
     <Compile Include="forms\restore.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\scheduler.Designer.vb">
-      <DependentUpon>scheduler.vb</DependentUpon>
+    <Compile Include="forms\upgrade.Designer.vb">
+      <DependentUpon>upgrade.vb</DependentUpon>
     </Compile>
-    <Compile Include="forms\scheduler.vb">
+    <Compile Include="forms\upgrade.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\serverConnect.Designer.vb">
@@ -239,8 +239,8 @@
     <EmbeddedResource Include="forms\restore.resx">
       <DependentUpon>restore.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\scheduler.resx">
-      <DependentUpon>scheduler.vb</DependentUpon>
+    <EmbeddedResource Include="forms\upgrade.resx">
+      <DependentUpon>upgrade.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\serverConnect.resx">
       <DependentUpon>serverConnect.vb</DependentUpon>
@@ -275,6 +275,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\img-thing.jpg" />
+    <None Include="Resources\cloud_comment.png" />
+    <None Include="Resources\cloud_download.png" />
+    <None Include="Resources\dots.png" />
+    <None Include="Resources\dots1.png" />
+    <None Include="Resources\download.jpg" />
     <Content Include="Resources\E.ico" />
     <Content Include="Resources\Iconshock-Beta-Web-Design-Briefcase.ico" />
     <None Include="Resources\martyn.jpg" />

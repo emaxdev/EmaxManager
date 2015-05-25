@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EmaxManager.exe" size="696744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EmaxManager.exe" size="873384">
       <assemblyIdentity name="EmaxManager" version="8.6.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ou23g6HATExDy0XtlJuYfKvzlLg=</dsig:DigestValue>
+        <dsig:DigestValue>aQ8kduVCnCswejdnmC3MicbfiAU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,13 +66,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="EmaxManager.exe.config" size="5912">
+  <file name="EmaxManager.exe.config" size="6165">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>6rNIQsQtTXFtSAni2Xm3qY3LlVo=</dsig:DigestValue>
+      <dsig:DigestValue>BK0oaZXs8x5BjF71PFpO1Trddqc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\E.ico" size="161862">

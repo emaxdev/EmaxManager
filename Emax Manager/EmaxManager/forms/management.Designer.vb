@@ -35,7 +35,6 @@ Partial Class management
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.btnLoadOther = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.headerPanel = New System.Windows.Forms.Panel()
@@ -51,7 +50,7 @@ Partial Class management
         '
         Me.btnRunScripts.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRunScripts.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnRunScripts.Location = New System.Drawing.Point(12, 297)
+        Me.btnRunScripts.Location = New System.Drawing.Point(12, 298)
         Me.btnRunScripts.Name = "btnRunScripts"
         Me.btnRunScripts.Size = New System.Drawing.Size(192, 74)
         Me.btnRunScripts.TabIndex = 2
@@ -63,9 +62,9 @@ Partial Class management
         Me.btnUpgrade.AllowDrop = True
         Me.btnUpgrade.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpgrade.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnUpgrade.Location = New System.Drawing.Point(12, 70)
+        Me.btnUpgrade.Location = New System.Drawing.Point(12, 64)
         Me.btnUpgrade.Name = "btnUpgrade"
-        Me.btnUpgrade.Size = New System.Drawing.Size(564, 66)
+        Me.btnUpgrade.Size = New System.Drawing.Size(564, 74)
         Me.btnUpgrade.TabIndex = 0
         Me.btnUpgrade.Text = "Upgrade"
         Me.btnUpgrade.UseVisualStyleBackColor = True
@@ -84,7 +83,7 @@ Partial Class management
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button3.Location = New System.Drawing.Point(210, 219)
+        Me.Button3.Location = New System.Drawing.Point(210, 220)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(171, 74)
         Me.Button3.TabIndex = 15
@@ -98,7 +97,7 @@ Partial Class management
         Me.btnBackUp.ForeColor = System.Drawing.SystemColors.Desktop
         Me.btnBackUp.Location = New System.Drawing.Point(12, 142)
         Me.btnBackUp.Name = "btnBackUp"
-        Me.btnBackUp.Size = New System.Drawing.Size(192, 50)
+        Me.btnBackUp.Size = New System.Drawing.Size(192, 56)
         Me.btnBackUp.TabIndex = 0
         Me.btnBackUp.Text = "Back Up Database"
         Me.btnBackUp.UseVisualStyleBackColor = True
@@ -107,7 +106,7 @@ Partial Class management
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button4.Location = New System.Drawing.Point(12, 219)
+        Me.Button4.Location = New System.Drawing.Point(12, 220)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(192, 74)
         Me.Button4.TabIndex = 17
@@ -117,9 +116,9 @@ Partial Class management
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Calibri", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(12, 70)
+        Me.Button5.Location = New System.Drawing.Point(12, 64)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(564, 384)
+        Me.Button5.Size = New System.Drawing.Size(564, 387)
         Me.Button5.TabIndex = 18
         Me.Button5.Text = "Set Up"
         Me.Button5.UseVisualStyleBackColor = True
@@ -129,7 +128,7 @@ Partial Class management
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button6.Location = New System.Drawing.Point(387, 296)
+        Me.Button6.Location = New System.Drawing.Point(387, 298)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(189, 74)
         Me.Button6.TabIndex = 19
@@ -149,7 +148,7 @@ Partial Class management
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Button8.Location = New System.Drawing.Point(12, 379)
+        Me.Button8.Location = New System.Drawing.Point(12, 376)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(192, 74)
         Me.Button8.TabIndex = 21
@@ -159,7 +158,7 @@ Partial Class management
         'Button9
         '
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Button9.Location = New System.Drawing.Point(387, 219)
+        Me.Button9.Location = New System.Drawing.Point(387, 220)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(189, 74)
         Me.Button9.TabIndex = 22
@@ -170,7 +169,7 @@ Partial Class management
         '
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button11.Location = New System.Drawing.Point(387, 379)
+        Me.Button11.Location = New System.Drawing.Point(387, 376)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(189, 74)
         Me.Button11.TabIndex = 24
@@ -180,30 +179,18 @@ Partial Class management
         'Button12
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!)
-        Me.Button12.Location = New System.Drawing.Point(210, 379)
+        Me.Button12.Location = New System.Drawing.Point(210, 376)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(171, 74)
         Me.Button12.TabIndex = 25
         Me.Button12.Text = "Reset All UDL's"
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'btnLoadOther
-        '
-        Me.btnLoadOther.AllowDrop = True
-        Me.btnLoadOther.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoadOther.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnLoadOther.Location = New System.Drawing.Point(415, 85)
-        Me.btnLoadOther.Name = "btnLoadOther"
-        Me.btnLoadOther.Size = New System.Drawing.Size(138, 39)
-        Me.btnLoadOther.TabIndex = 26
-        Me.btnLoadOther.Text = "Load or Drop Other"
-        Me.btnLoadOther.UseVisualStyleBackColor = True
-        '
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button13.Location = New System.Drawing.Point(210, 297)
+        Me.Button13.Location = New System.Drawing.Point(210, 298)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(171, 74)
         Me.Button13.TabIndex = 28
@@ -256,9 +243,9 @@ Partial Class management
         Me.btnShowBackups.Enabled = False
         Me.btnShowBackups.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnShowBackups.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnShowBackups.Location = New System.Drawing.Point(12, 192)
+        Me.btnShowBackups.Location = New System.Drawing.Point(12, 196)
         Me.btnShowBackups.Name = "btnShowBackups"
-        Me.btnShowBackups.Size = New System.Drawing.Size(192, 24)
+        Me.btnShowBackups.Size = New System.Drawing.Size(192, 20)
         Me.btnShowBackups.TabIndex = 38
         Me.btnShowBackups.Text = "View Backups"
         Me.btnShowBackups.UseVisualStyleBackColor = True
@@ -272,11 +259,11 @@ Partial Class management
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(588, 462)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnBackUp)
         Me.Controls.Add(Me.btnShowBackups)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.btnLoadOther)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button9)
@@ -287,7 +274,6 @@ Partial Class management
         Me.Controls.Add(Me.btnUpgrade)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnRunScripts)
-        Me.Controls.Add(Me.btnBackUp)
         Me.Controls.Add(Me.Button5)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -315,7 +301,6 @@ Partial Class management
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents btnLoadOther As System.Windows.Forms.Button
     Friend WithEvents Button13 As System.Windows.Forms.Button
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents headerPanel As System.Windows.Forms.Panel

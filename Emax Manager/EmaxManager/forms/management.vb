@@ -15,36 +15,42 @@ Public Class management
     Dim database As String = ""
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpgrade.Click
-        If Not My.Settings.companyName > "" Then
-            main.Label2.ForeColor = Color.Red
-        Else
-            main.Label2.ForeColor = Color.Black
-        End If
+        main.tbAction.Visible = False
+        Dim upgradeFrm As New upgrade
+        upgradeFrm.MdiParent = DirectCast(main, main)
+        upgradeFrm.Show()
 
-        Dim selectedDatabases As New Specialized.StringCollection
-        My.Settings.checkedDatabases.Clear()
-        For Each item As main.MyListBoxItem In main.CLBDatabases.CheckedItems
-            If item.ExtraData = My.Settings.mainDatabase And My.Settings.mainDatabaseLocked Then
-                MsgBox("You have selected your main Database and it is locked for Editing" & vbCrLf & "Please de-select or unlock", vbCritical)
-                Exit Sub
-            End If
-            selectedDatabases.Add(item.ExtraData.ToString)
-        Next
-        My.Settings.checkedDatabases = selectedDatabases
-        My.Settings.Save()
+        'If Not My.Settings.companyName > "" Then
+        '    main.Label2.ForeColor = Color.Red
+        'Else
+        '    main.Label2.ForeColor = Color.Black
+        'End If
 
-        If main.CLBDatabases.CheckedItems.Count > 0 Then
-            main.CLBDatabases.Enabled = False
-            main.Panel2.Visible = True
-            main.currentProcess = 2
-            main.tbDeletePass.Focus()
-        Else
-            MsgBox("Please select at least one database", vbInformation, "Select a database")
-        End If
+        'Dim selectedDatabases As New Specialized.StringCollection
+        'My.Settings.checkedDatabases.Clear()
+        'For Each item As main.MyListBoxItem In main.CLBDatabases.CheckedItems
+        '    If item.ExtraData = My.Settings.mainDatabase And My.Settings.mainDatabaseLocked Then
+        '        MsgBox("You have selected your main Database and it is locked for Editing" & vbCrLf & "Please de-select or unlock", vbCritical)
+        '        Exit Sub
+        '    End If
+        '    selectedDatabases.Add(item.ExtraData.ToString)
+        'Next
+        'My.Settings.checkedDatabases = selectedDatabases
+        'My.Settings.Save()
+
+        'If main.CLBDatabases.CheckedItems.Count > 0 Then
+        '    main.CLBDatabases.Enabled = False
+        '    main.Panel2.Visible = True
+        '    main.currentProcess = 2
+        '    main.tbDeletePass.Focus()
+        'Else
+        '    MsgBox("Please select at least one database", vbInformation, "Select a database")
+        'End If
     End Sub
 
 
     Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRunScripts.Click
+        main.tbAction.Visible = False
         Dim selectedDatabases As New Specialized.StringCollection
         My.Settings.checkedDatabases.Clear()
         For Each item In main.CLBDatabases.CheckedItems
@@ -57,7 +63,7 @@ Public Class management
             main.currentProcess = 3
             main.tbDeletePass.Focus()
         Else
-            MsgBox("Please select at least one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select at least one database!" : main.tbAction.Visible = True
         End If
     End Sub
 
@@ -78,16 +84,31 @@ Public Class management
                 btnBackUp.Enabled = True
                 btnShowBackups.Enabled = True
                 btnBackUp.Text = "Back Up Database"
+                If My.Settings.autoBackUpOnDelete Then
+                    Button7.Enabled = True
+                    Button7.Text = "Delete Database"
+                End If
             Else
                 btnBackUp.Enabled = False
                 btnShowBackups.Enabled = False
                 btnBackUp.Text = "Back Up Database [Disabled]"
+                If My.Settings.autoBackUpOnDelete Then
+                    Button7.Enabled = False
+                    Button7.Text = "Delete Database [Disabled]"
+                End If
             End If
             If checkFiles() Then
                 btnUpgrade.Enabled = True
-                Dim objReader As New System.IO.StreamReader(My.Settings.settingsFolder & "Upgrade.txt")
+                Dim upgradeFile As String
+                If My.Settings.upgradeFileLocation > "" Then
+                    upgradeFile = My.Settings.upgradeFileLocation
+                Else
+                    upgradeFile = My.Settings.settingsFolder & "Upgrade.txt"
+                End If
+
+                Dim objReader As New System.IO.StreamReader(upgradeFile)
                 Dim versionLine As String = objReader.ReadLine() & vbNewLine
-                If main.newFileName > "" Then
+                If My.Settings.upgradeFileLocation > "" Then
                     btnUpgrade.Text = "Upgrade to " & versionLine.Substring(11, 3) & " - Alt"
                 Else
                     btnUpgrade.Text = "Upgrade to " & versionLine.Substring(11, 3)
@@ -117,7 +138,7 @@ Public Class management
                 'main.Button2.Visible = True
 
         Catch ex As Exception
-            MsgBox("Please check permissions on Emax Manager Application folder!", MsgBoxStyle.Critical)
+            main.tbAction.Text = "Problem - Check permissions!" : main.tbAction.Visible = True
         End Try
 
     End Sub
@@ -202,6 +223,7 @@ Public Class management
     End Function
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBackUp.Click
+        main.tbAction.Visible = False
         Dim selectedDatabases As New Specialized.StringCollection
         My.Settings.checkedDatabases.Clear()
         For Each item As main.MyListBoxItem In main.CLBDatabases.CheckedItems
@@ -219,10 +241,9 @@ Public Class management
                 backingUp.Show()
             End If
         Else
-            MsgBox("Please select at least one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select at least one database" : main.tbAction.Visible = True
         End If
-
-
+    
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -238,12 +259,13 @@ Public Class management
             conn.MdiParent = main
             conn.Show()
         Else
-            MsgBox("Please select one database", MsgBoxStyle.Exclamation)
+            main.tbAction.Text = "Select one database" : main.tbAction.Visible = True
         End If
 
     End Sub
 
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        main.tbAction.Visible = False
         'If main.CLBDatabases.CheckedItems.Count > 0 Then
         '    If main.CLBDatabases.CheckedItems.Count = 1 Then
         '        'Dim backingUp As New backingUp(3)
@@ -273,6 +295,7 @@ Public Class management
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+        main.tbAction.Visible = False
         main.newFileName = ""
         Me.Close()
         Dim backingUp As New backingUp(5)
@@ -305,6 +328,7 @@ Public Class management
     'End Sub
 
     Private Sub Button4_Click_1(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+        main.tbAction.Visible = False
         Dim backingUp As New backingUp(9)
         backingUp.MdiParent = main
         backingUp.Show()
@@ -315,6 +339,7 @@ Public Class management
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        main.tbAction.Visible = False
         Me.Close()
         Dim licence As New licences
         licence.MdiParent = main
@@ -322,15 +347,19 @@ Public Class management
     End Sub
 
     Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        main.tbAction.Visible = False
         If main.CLBDatabases.CheckedItems.Count = 1 Then
-            If MsgBox("Are you sure you wish to delete this database?", vbYesNo, "Delete Database") = vbYes Then
-                main.CLBDatabases.Enabled = False
-                main.Panel2.Visible = True
-                main.currentProcess = 1
-                main.tbDeletePass.Focus()
-            End If
+
+            main.CLBDatabases.Enabled = False
+            main.Panel2.Visible = True
+            main.currentProcess = 1
+            main.tbDeletePass.Focus()
+
+            main.tbAction.Text = "Delete Database?"
+            main.tbAction.Visible = True
         Else
-            MsgBox("Please select one database", vbCritical, "One Database")
+            main.tbAction.Text = "Select one database!"
+            main.tbAction.Visible = True
         End If
     End Sub
 
@@ -359,7 +388,7 @@ Public Class management
                 backingUp.Show()
             End If
         Else
-            MsgBox("Please select at least one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select at least one database" : main.tbAction.Visible = True
         End If
 
     End Sub
@@ -376,6 +405,7 @@ Public Class management
     End Function
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        main.tbAction.Visible = False
         Dim udlString As String
         Dim databaseName As String
         If main.CLBDatabases.CheckedItems.Count > 0 Then
@@ -391,17 +421,17 @@ Public Class management
                         outfile.Write(udlString)
                     End Using
                 Next
-                MsgBox("UDL(s) Created!", vbInformation, "UDL Success")
+                main.tbAction.Text = "UDL(s) Created!" : main.tbAction.Visible = True
             Catch ex As Exception
-                MsgBox("Something went wrong creating UDL!", vbCritical, "UDL Error")
+                main.tbAction.Text = "Problem creating UDL(s)" : main.tbAction.Visible = True
             End Try
-            
         Else
-            MsgBox("Please select at least one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select at least one database!" : main.tbAction.Visible = True
         End If
     End Sub
 
     Private Sub Button9_Click_1(sender As Object, e As EventArgs) Handles Button9.Click
+        main.tbAction.Visible = False
         If main.CLBDatabases.CheckedItems.Count = 1 Then
             Dim selectedDatabases As New Specialized.StringCollection
             My.Settings.checkedDatabases.Clear()
@@ -415,7 +445,7 @@ Public Class management
             backingUp.MdiParent = main
             backingUp.Show()
         Else
-            MsgBox("Please select one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select one database!" : main.tbAction.Visible = True
         End If
     End Sub
 
@@ -427,6 +457,7 @@ Public Class management
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        main.tbAction.Visible = False
         If main.CLBDatabases.CheckedItems.Count = 1 Then
             main.CLBDatabases.Enabled = False
             Me.Close()
@@ -434,11 +465,12 @@ Public Class management
             backingUp.MdiParent = main
             backingUp.Show()
         Else
-            MsgBox("Please select one database", vbInformation, "Select a database")
+            main.tbAction.Text = "Select one database!" : main.tbAction.Visible = True
         End If
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        main.tbAction.Visible = False
         Dim udlString As String
         Dim databaseName As String
         Try
@@ -456,14 +488,14 @@ Public Class management
                     outfile.Write(udlString)
                 End Using
             Next
-            MsgBox("UDL(s) Reset!", vbInformation, "UDL Success")
+            main.tbAction.Text = "UDL(s) Reset!" : main.tbAction.Visible = True
         Catch ex As Exception
-            MsgBox("Something went wrong creating UDL!", vbCritical, "UDL Error")
+            main.tbAction.Text = "Problem creating UDL(s)" : main.tbAction.Visible = True
         End Try
 
     End Sub
 
-    Private Sub btnLoadOther_Click(sender As Object, e As EventArgs) Handles btnLoadOther.Click
+    Private Sub btnLoadOther_Click(sender As Object, e As EventArgs)
 
         Dim fd As OpenFileDialog = New OpenFileDialog()
         Try
@@ -474,9 +506,8 @@ Public Class management
             fd.RestoreDirectory = True
 
             If fd.ShowDialog() = DialogResult.OK Then
-
-                main.newFileName = fd.FileName
-               
+                My.Settings.upgradeFileLocation = fd.FileName
+                My.Settings.Save()
                 Me.Close()
                 Dim backingUp As New backingUp(14)
                 backingUp.MdiParent = main
@@ -493,12 +524,13 @@ Public Class management
     Private Sub Button1_Click_1(sender As Object, e As EventArgs)
         main.CLBDatabases.Enabled = False
         Me.Close()
-        Dim mySchedule As New scheduler
+        Dim mySchedule As New upgrade
         mySchedule.MdiParent = main
         mySchedule.Show()
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        main.tbAction.Visible = False
         Me.Close()
         Dim backingUp As New backingUp(22)
         backingUp.MdiParent = main
@@ -511,15 +543,14 @@ Public Class management
 
   
 
-    Private Sub btnLoadOther_DragDrop(sender As Object, e As DragEventArgs) Handles btnLoadOther.DragDrop
+    Private Sub btnLoadOther_DragDrop(sender As Object, e As DragEventArgs)
         Try
 
             Dim files() As String = e.Data.GetData(DataFormats.FileDrop)
             For Each path In files
-                main.newFileName = path
+                My.Settings.upgradeFileLocation = path
             Next
-
-
+            My.Settings.Save()
             Me.Close()
             Dim backingUp As New backingUp(14)
             backingUp.MdiParent = main
@@ -530,7 +561,7 @@ Public Class management
         End Try
     End Sub
 
-    Private Sub btnLoadOther_DragEnter(sender As Object, e As DragEventArgs) Handles btnLoadOther.DragEnter
+    Private Sub btnLoadOther_DragEnter(sender As Object, e As DragEventArgs)
         If e.Data.GetDataPresent(DataFormats.FileDrop) Then
             e.Effect = DragDropEffects.Copy
         End If

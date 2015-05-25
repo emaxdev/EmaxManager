@@ -23,7 +23,6 @@ Partial Class Integrity
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.headerPanel = New System.Windows.Forms.Panel()
@@ -43,24 +42,13 @@ Partial Class Integrity
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.Label1.Location = New System.Drawing.Point(30, 397)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 24)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Integrity.csv"
-        '
         'RichTextBox1
         '
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.Location = New System.Drawing.Point(23, 75)
         Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(50)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(545, 313)
+        Me.RichTextBox1.Size = New System.Drawing.Size(545, 348)
         Me.RichTextBox1.TabIndex = 34
         Me.RichTextBox1.Text = ""
         '
@@ -114,7 +102,6 @@ Partial Class Integrity
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(229, 6)
@@ -127,11 +114,9 @@ Partial Class Integrity
         Me.headerPanel.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents headerPanel As System.Windows.Forms.Panel

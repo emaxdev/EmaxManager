@@ -217,7 +217,7 @@ Partial Class licences
         Me.Panel4.Controls.Add(Me.Button6)
         Me.Panel4.Controls.Add(Me.tbLicencePass)
         Me.Panel4.Controls.Add(Me.Label8)
-        Me.Panel4.Location = New System.Drawing.Point(11, 424)
+        Me.Panel4.Location = New System.Drawing.Point(12, 424)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(568, 27)
         Me.Panel4.TabIndex = 30
@@ -366,7 +366,7 @@ Partial Class licences
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(229, 8)
         Me.MaximumSize = New System.Drawing.Size(590, 464)
-        Me.MinimumSize = New System.Drawing.Size(391, 464)
+        Me.MinimumSize = New System.Drawing.Size(590, 464)
         Me.Name = "licences"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

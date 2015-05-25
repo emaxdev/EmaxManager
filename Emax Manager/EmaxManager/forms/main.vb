@@ -20,6 +20,7 @@ Public Class main
     Public screenLeft As Integer = 227
     Public currentProcess As Integer
     Public Shared newFileName As String
+    Public Shared integrityResult As String
     Dim CommandLineArgs As System.Collections.ObjectModel.ReadOnlyCollection(Of String) = My.Application.CommandLineArgs
 
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -92,7 +93,7 @@ Public Class main
                     serverConnect.Show()
                 End If
             End Try
-            If UCase(My.Settings.server) = "MARTYN-PC\EMAX2012" Or UCase(My.Settings.server) = "ALAN\SQL2012" Then
+            If UCase(My.Settings.server) = "MARTYN-PC\EMAX2014" Then
                 PictureBox7.Visible = True
                 CLBDatabases.Height = 256
             End If
@@ -188,6 +189,7 @@ Public Class main
     End Sub
 
     Private Sub CLBDatabases_MouseDown(sender As Object, e As MouseEventArgs) Handles CLBDatabases.MouseDown
+        tbAction.Visible = False
         'Dim nameFrom As String
         'Dim nameTo As String
         'If e.Button = MouseButtons.Right Then
@@ -335,35 +337,36 @@ Public Class main
         password = Replace(CStr(Today), "/", "")
         password = UCase(Mid(password, 1, 1) & Mid(MonthName(Now.Month), 1, 3))
         If UCase(tbDeletePass.Text) = password Or tbDeletePass.Text = "6313" Then
+            tbAction.Visible = False
             Select Case currentProcess
                 Case 1
                     Dim back As New backingUp(11)
                     back.MdiParent = Me
                     back.Show()
                 Case 2
-                        If My.Settings.autoBackUp = False Then
-                            If MsgBox("Are you sure you wish to upgrade the selected databases without backing up first?", MsgBoxStyle.OkCancel, "Continue?") = vbOK Then
-                                Dim backingUp As New backingUp(1)
-                                backingUp.MdiParent = Me
-                                backingUp.Show()
-                            End If
-                        Else
+                    If My.Settings.autoBackUp = False Then
+                        If MsgBox("Are you sure you wish to upgrade the selected databases without backing up first?", MsgBoxStyle.OkCancel, "Continue?") = vbOK Then
                             Dim backingUp As New backingUp(1)
                             backingUp.MdiParent = Me
                             backingUp.Show()
                         End If
+                    Else
+                        Dim backingUp As New backingUp(1)
+                        backingUp.MdiParent = Me
+                        backingUp.Show()
+                    End If
                 Case 3
-                   
+
                     If Not Directory.Exists(My.Settings.settingsFolder & "scripts") Then Directory.CreateDirectory(My.Settings.settingsFolder & "scripts")
-                        Dim numberOfFiles As Integer = IO.Directory.GetFiles(My.Settings.settingsFolder & "scripts").Length
-                        If numberOfFiles > 0 Then
-                            Dim queries As New queries
-                            queries.MdiParent = Me
-                            queries.Show()
-                        Else
-                            Dim backingUp As New backingUp(10)
-                            backingUp.MdiParent = Me
-                            backingUp.Show()
+                    Dim numberOfFiles As Integer = IO.Directory.GetFiles(My.Settings.settingsFolder & "scripts").Length
+                    If numberOfFiles > 0 Then
+                        Dim queries As New queries
+                        queries.MdiParent = Me
+                        queries.Show()
+                    Else
+                        Dim backingUp As New backingUp(10)
+                        backingUp.MdiParent = Me
+                        backingUp.Show()
                     End If
 
             End Select
@@ -374,6 +377,7 @@ Public Class main
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        tbAction.Visible = False
         CLBDatabases.Enabled = True
         Panel2.Visible = False
     End Sub
@@ -442,6 +446,7 @@ Public Class main
     End Sub
 
     Private Sub PictureBox3_Click_1(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        tbAction.Visible = False
         refreshDBList()
         Button1.Text = "Select All"
     End Sub

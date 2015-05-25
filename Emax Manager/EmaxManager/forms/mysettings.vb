@@ -19,6 +19,7 @@
         My.Settings.autoCheckForUpdate = IIf(chkAutoCheckForUpdate.CheckState = 1, True, False)
         My.Settings.openBackupFolder = IIf(openBackupFolder.CheckState = 1, True, False)
         My.Settings.companyName = tbCompany.Text
+        My.Settings.autoBackUpOnDelete = IIf(cbBackupDelete.CheckState = 1, True, False)
         My.Settings.Save()
 
         Dim manage As New management
@@ -55,6 +56,7 @@
         chkShowDisclaimer.CheckState = IIf(My.Settings.hideDisclaimer, 0, 1)
         chkAutoCheckForUpdate.CheckState = IIf(My.Settings.autoCheckForUpdate, 1, 0)
         openBackupFolder.CheckState = IIf(My.Settings.openBackupFolder, 1, 0)
+        cbBackupDelete.CheckState = IIf(My.Settings.autoBackUpOnDelete, 1, 0)
         tbCompany.Text = My.Settings.companyName
     End Sub
 
@@ -262,4 +264,10 @@
    
 
   
+    Private Sub cbBackUp_CheckedChanged(sender As Object, e As EventArgs) Handles cbBackUp.CheckedChanged
+
+    End Sub
+    Private Sub cbViews_CheckedChanged(sender As Object, e As EventArgs) Handles cbViews.CheckedChanged
+
+    End Sub
 End Class

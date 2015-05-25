@@ -25,6 +25,7 @@ Partial Class main
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.tbAction = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.tbDeletePass = New System.Windows.Forms.TextBox()
@@ -32,6 +33,10 @@ Partial Class main
         Me.Button2 = New System.Windows.Forms.Button()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.lbLog = New System.Windows.Forms.ListBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -55,12 +60,9 @@ Partial Class main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,12 +76,12 @@ Partial Class main
         Me.headerPanel.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel3.Controls.Add(Me.tbAction)
         Me.Panel3.Controls.Add(Me.Panel2)
         Me.Panel3.Controls.Add(Me.Button2)
         Me.Panel3.Controls.Add(Me.lblStatus)
@@ -90,12 +92,26 @@ Partial Class main
         Me.Panel3.Size = New System.Drawing.Size(812, 31)
         Me.Panel3.TabIndex = 14
         '
+        'tbAction
+        '
+        Me.tbAction.BackColor = System.Drawing.Color.DimGray
+        Me.tbAction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.tbAction.Font = New System.Drawing.Font("Calibri", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbAction.ForeColor = System.Drawing.Color.White
+        Me.tbAction.Location = New System.Drawing.Point(267, 6)
+        Me.tbAction.Name = "tbAction"
+        Me.tbAction.Size = New System.Drawing.Size(230, 19)
+        Me.tbAction.TabIndex = 29
+        Me.tbAction.Text = "Status"
+        Me.tbAction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.tbAction.Visible = False
+        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.Button5)
         Me.Panel2.Controls.Add(Me.tbDeletePass)
         Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(514, 5)
+        Me.Panel2.Location = New System.Drawing.Point(513, 5)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(294, 21)
         Me.Panel2.TabIndex = 27
@@ -130,7 +146,7 @@ Partial Class main
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(112, 4)
+        Me.Button2.Location = New System.Drawing.Point(166, 5)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(77, 23)
         Me.Button2.TabIndex = 22
@@ -143,19 +159,55 @@ Partial Class main
         Me.lblStatus.AutoSize = True
         Me.lblStatus.BackColor = System.Drawing.Color.Transparent
         Me.lblStatus.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(37, 8)
+        Me.lblStatus.Location = New System.Drawing.Point(13, 8)
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(0, 15)
+        Me.lblStatus.Size = New System.Drawing.Size(41, 15)
         Me.lblStatus.TabIndex = 16
+        Me.lblStatus.Text = "Status"
         '
         'lbLog
         '
         Me.lbLog.FormattingEnabled = True
-        Me.lbLog.Location = New System.Drawing.Point(11, 8)
+        Me.lbLog.Location = New System.Drawing.Point(115, 7)
         Me.lbLog.Name = "lbLog"
         Me.lbLog.Size = New System.Drawing.Size(45, 17)
         Me.lbLog.TabIndex = 23
         Me.lbLog.Visible = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Transparent
+        Me.Panel6.Controls.Add(Me.Panel9)
+        Me.Panel6.Controls.Add(Me.Panel8)
+        Me.Panel6.Controls.Add(Me.Panel7)
+        Me.Panel6.Location = New System.Drawing.Point(734, 4)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(74, 22)
+        Me.Panel6.TabIndex = 28
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel9.Location = New System.Drawing.Point(48, 2)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(17, 18)
+        Me.Panel9.TabIndex = 2
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.CadetBlue
+        Me.Panel8.Location = New System.Drawing.Point(27, 2)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(17, 18)
+        Me.Panel8.TabIndex = 1
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.Panel7.Location = New System.Drawing.Point(6, 2)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(17, 18)
+        Me.Panel7.TabIndex = 0
         '
         'Panel1
         '
@@ -233,7 +285,7 @@ Partial Class main
         Me.panelWelcome2.Controls.Add(Me.chkHide)
         Me.panelWelcome2.Location = New System.Drawing.Point(12, 64)
         Me.panelWelcome2.Name = "panelWelcome2"
-        Me.panelWelcome2.Size = New System.Drawing.Size(195, 353)
+        Me.panelWelcome2.Size = New System.Drawing.Size(195, 387)
         Me.panelWelcome2.TabIndex = 33
         '
         'TextBox1
@@ -391,41 +443,6 @@ Partial Class main
         Me.PictureBox5.TabIndex = 23
         Me.PictureBox5.TabStop = False
         '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Transparent
-        Me.Panel6.Controls.Add(Me.Panel9)
-        Me.Panel6.Controls.Add(Me.Panel8)
-        Me.Panel6.Controls.Add(Me.Panel7)
-        Me.Panel6.Location = New System.Drawing.Point(734, 4)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(74, 22)
-        Me.Panel6.TabIndex = 28
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.DarkGray
-        Me.Panel9.Location = New System.Drawing.Point(48, 2)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(17, 18)
-        Me.Panel9.TabIndex = 2
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.CadetBlue
-        Me.Panel8.Location = New System.Drawing.Point(27, 2)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(17, 18)
-        Me.Panel8.TabIndex = 1
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Panel7.Location = New System.Drawing.Point(6, 2)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(17, 18)
-        Me.Panel7.TabIndex = 0
-        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -449,6 +466,7 @@ Partial Class main
         Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -465,7 +483,6 @@ Partial Class main
         Me.headerPanel.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -506,5 +523,6 @@ Partial Class main
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents tbAction As System.Windows.Forms.Label
 
 End Class
