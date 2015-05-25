@@ -15,7 +15,7 @@ Public Class upgrade
         tbUpgradeFile.Text = IIf(My.Settings.upgradeFileLocation > "", My.Settings.upgradeFileLocation, My.Settings.settingsFolder & "Upgrade.txt")
         btnReset.Visible = My.Settings.upgradeFileLocation > ""
         lblUpgradeDetails.Text = Trim(worker.getTextBetweenComments(File.ReadAllText(tbUpgradeFile.Text), "--Comments Start", "--Comments End"))
-        lblUpgradeDetails.Text = Replace(lblUpgradeDetails.Text, "--Comments Start", "")
+        lblUpgradeDetails.Text = Trim(Replace(lblUpgradeDetails.Text, "--Comments Start", ""))
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

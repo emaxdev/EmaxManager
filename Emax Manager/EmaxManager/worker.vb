@@ -608,6 +608,7 @@ skipscript:
             End If
 
             Dim integrityResult As String = ""
+            main.integrityResult = ""
             integrityResult = checkIntegrity(database)
             If Not integrityResult.Contains("Critical") Then
                 log.Add(database & " - integrity successfull")

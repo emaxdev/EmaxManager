@@ -433,16 +433,9 @@ done:
 
         Me.Close()
 
+        Threading.Thread.Sleep(2000)
+
         main.Button1.Enabled = True
-
-
-        main.CLBDatabases.Items.Clear()
-        For Each item In My.Settings.databaseList
-            main.CLBDatabases.Items.Add(New main.MyListBoxItem() With {.Name = item & " - " & worker.getVersion(item).ToString, .ExtraData = item})
-        Next
-        main.CLBDatabases.Refresh()
-
-
         main.PictureBox6.Enabled = True
         main.PictureBox2.Enabled = True
         main.PictureBox3.Enabled = True
@@ -485,7 +478,13 @@ done:
             End If
 
         End If
-        
+
+        main.CLBDatabases.Items.Clear()
+        For Each item In My.Settings.databaseList
+            main.CLBDatabases.Items.Add(New main.MyListBoxItem() With {.Name = item & " - " & worker.getVersion(item).ToString, .ExtraData = item})
+        Next
+        main.CLBDatabases.Refresh()
+
         My.Settings.loaded = True
         My.Settings.Save()
 
