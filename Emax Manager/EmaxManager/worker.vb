@@ -483,24 +483,29 @@ Public Class worker
                 Dim sqlFile As String = ""
                 Dim scriptDescription As String = ""
                 Dim scriptDetails As String = ""
-
                 Try
-                    scriptDetails = File.ReadAllText(upgradeFile)
-                    Dim stringToFind As String = ""
-                    Dim position As Integer
 
-                    buttonDetails = getTextBetweenComments(scriptDetails, "--Buttons Start", "--Buttons End")
-                    integrityDetails = getTextBetweenComments(scriptDetails, "--Integrity Start", "--Integrity End")
-                    scriptDetails = getTextBetweenComments(scriptDetails, "--Version " & currentVersion + 1, "--Scripts End")
+                Catch ex As Exception
 
-                    If Not scriptDetails > "" Then
-                        MsgBox("Problem  with upgrade file.")
-                        success = False
-                        GoTo UpdateError
-                    End If
+                End Try
+                scriptDetails = File.ReadAllText(upgradeFile)
+                Dim stringToFind As String = ""
+                Dim position As Integer
 
-                    scriptDetails = Replace(scriptDetails, "--", ";")
-                    versionArr = scriptDetails.Split(";")
+                buttonDetails = getTextBetweenComments(scriptDetails, "--Buttons Start", "--Buttons End", False)
+                integrityDetails = getTextBetweenComments(scriptDetails, "--Integrity Start", "--Integrity End", False)
+                scriptDetails = getTextBetweenComments(scriptDetails, "--Version " & currentVersion + 1, "--Scripts End", True)
+
+                If Not scriptDetails > "" Then
+                    MsgBox("Problem  with upgrade file.")
+                    success = False
+                    GoTo UpdateError
+                End If
+
+                scriptDetails = Replace(scriptDetails, "--", ";")
+                versionArr = scriptDetails.Split(";")
+                Try
+
                     'Dim sr As StreamReader = New StreamReader(sqlFile)
 
                     For Each item In versionArr
@@ -681,16 +686,27 @@ UpdateError:
         Return success
     End Function
 
-    Public Shared Function getTextBetweenComments(searchText As String, startText As String, endText As String) As String
+    Public Shared Function getTextBetweenComments(searchText As String, startText As String, endText As String, includeStart As Boolean) As String
         Dim startPos As Integer
         Dim endPos As Integer
-        startPos = InStr(searchText, startText)
+        If includeStart Then startPos = InStr(searchText, startText) Else startPos = InStr(searchText, startText) + Len(startText)
         endPos = InStr(searchText, endText)
         If startPos > 0 And endPos > 0 Then
-            getTextBetweenComments = searchText.Substring(startPos - 2, endPos - startPos - 2)
+            getTextBetweenComments = searchText.Substring(startPos, endPos - startPos - 4)
         Else
             getTextBetweenComments = ""
         End If
+
+        Do While getTextBetweenComments.StartsWith(" ") Or getTextBetweenComments.StartsWith(vbCr) Or getTextBetweenComments.StartsWith(vbLf)
+            getTextBetweenComments = getTextBetweenComments.Substring(1)
+            getTextBetweenComments = Trim(getTextBetweenComments)
+        Loop
+
+        Do While getTextBetweenComments.EndsWith(" ") Or getTextBetweenComments.EndsWith(vbCr) Or getTextBetweenComments.EndsWith(vbLf)
+            getTextBetweenComments = getTextBetweenComments.Substring(0, Len(getTextBetweenComments) - 1)
+            getTextBetweenComments = Trim(getTextBetweenComments)
+        Loop
+
     End Function
 
     Public Shared Function fixButtons(buttonDetails As String) As Boolean
@@ -881,7 +897,7 @@ UpdateError:
             integrityInfo = File.ReadAllText(My.Settings.settingsFolder & "Upgrade.txt")
         End If
 
-        integrityInfo = worker.getTextBetweenComments(integrityInfo, "--Integrity Start", "--Integrity End")
+        integrityInfo = worker.getTextBetweenComments(integrityInfo, "--Integrity Start", "--Integrity End", False)
         If Not integrityInfo > "" Then checkIntegrity = "No integrity info available" : Exit Function
         integrityInfo = Replace(integrityInfo, "--Integrity Start", "")
         

@@ -12,10 +12,18 @@ Public Class upgrade
 
     Private Sub loadStuff()
         headerPanel.BackColor = Color.FromArgb(IIf(My.Settings.R > "", My.Settings.R, 0), IIf(My.Settings.B > "", My.Settings.B, 0), IIf(My.Settings.G > "", My.Settings.G, 0))
+        Panel4.BackColor = Color.FromArgb(IIf(My.Settings.R > "", My.Settings.R, 0), IIf(My.Settings.B > "", My.Settings.B, 0), IIf(My.Settings.G > "", My.Settings.G, 0))
         tbUpgradeFile.Text = IIf(My.Settings.upgradeFileLocation > "", My.Settings.upgradeFileLocation, My.Settings.settingsFolder & "Upgrade.txt")
         btnReset.Visible = My.Settings.upgradeFileLocation > ""
-        lblUpgradeDetails.Text = Trim(worker.getTextBetweenComments(File.ReadAllText(tbUpgradeFile.Text), "--Comments Start", "--Comments End"))
-        lblUpgradeDetails.Text = Trim(Replace(lblUpgradeDetails.Text, "--Comments Start", ""))
+        Dim objReader As New System.IO.StreamReader(tbUpgradeFile.Text)
+        Dim versionLine As String = objReader.ReadLine() & vbNewLine
+        If My.Settings.upgradeFileLocation > "" Then
+            lblCreated.Text = "Upgrade to " & versionLine.Substring(11, 3) & " - Alt"
+        Else
+            lblCreated.Text = "Upgrade to " & versionLine.Substring(11, 3)
+        End If
+        lblCreated.Text = lblCreated.Text & " - Created: " & worker.getTextBetweenComments(File.ReadAllText(tbUpgradeFile.Text), "--Created", "--Created End", False)
+        lblUpgradeDetails.Text = worker.getTextBetweenComments(File.ReadAllText(tbUpgradeFile.Text), "--Comments Start", "--Comments End", False)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

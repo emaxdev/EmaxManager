@@ -36,6 +36,7 @@ Partial Class upgrade
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblCreated = New System.Windows.Forms.Label()
         Me.Panel5.SuspendLayout()
         Me.headerPanel.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,18 +107,19 @@ Partial Class upgrade
         '
         'lblUpgradeDetails
         '
-        Me.lblUpgradeDetails.Location = New System.Drawing.Point(9, 36)
+        Me.lblUpgradeDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUpgradeDetails.Location = New System.Drawing.Point(12, 36)
         Me.lblUpgradeDetails.Name = "lblUpgradeDetails"
-        Me.lblUpgradeDetails.Size = New System.Drawing.Size(556, 152)
+        Me.lblUpgradeDetails.Size = New System.Drawing.Size(544, 141)
         Me.lblUpgradeDetails.TabIndex = 44
         Me.lblUpgradeDetails.Text = "Label3"
         '
         'btnReset
         '
         Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.btnReset.Location = New System.Drawing.Point(3, 203)
+        Me.btnReset.Location = New System.Drawing.Point(26, 191)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(565, 30)
+        Me.btnReset.Size = New System.Drawing.Size(521, 30)
         Me.btnReset.TabIndex = 45
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
@@ -129,15 +131,15 @@ Partial Class upgrade
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.tbUpgradeFile)
         Me.Panel4.Controls.Add(Me.Button4)
-        Me.Panel4.Location = New System.Drawing.Point(10, 70)
+        Me.Panel4.Location = New System.Drawing.Point(11, 70)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(572, 38)
+        Me.Panel4.Size = New System.Drawing.Size(568, 38)
         Me.Panel4.TabIndex = 58
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(8, 5)
         Me.Label2.Name = "Label2"
@@ -169,12 +171,13 @@ Partial Class upgrade
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.lblCreated)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.lblUpgradeDetails)
         Me.Panel1.Controls.Add(Me.btnReset)
-        Me.Panel1.Location = New System.Drawing.Point(10, 114)
+        Me.Panel1.Location = New System.Drawing.Point(11, 114)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(572, 241)
+        Me.Panel1.Size = New System.Drawing.Size(568, 241)
         Me.Panel1.TabIndex = 59
         '
         'Label3
@@ -187,6 +190,16 @@ Partial Class upgrade
         Me.Label3.Size = New System.Drawing.Size(174, 23)
         Me.Label3.TabIndex = 54
         Me.Label3.Text = "Upgrade Description:"
+        '
+        'lblCreated
+        '
+        Me.lblCreated.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCreated.Location = New System.Drawing.Point(191, 6)
+        Me.lblCreated.Name = "lblCreated"
+        Me.lblCreated.Size = New System.Drawing.Size(365, 23)
+        Me.lblCreated.TabIndex = 55
+        Me.lblCreated.Text = "Created: "
+        Me.lblCreated.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'upgrade
         '
@@ -231,4 +244,5 @@ Partial Class upgrade
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblCreated As System.Windows.Forms.Label
 End Class
